@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LGM"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:padding="3dp"
+        android:layout_margin="3dp"
+        android:background="#ff4539"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Covid - 19 Tracker"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:padding="3dp"
+        android:layout_margin="3dp"
+        android:background="#ff5439"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/searching"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:focusable="auto"
+        android:hint="Search State"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="#808080" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RVstates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/testing" />
+
+
+</LinearLayout>
